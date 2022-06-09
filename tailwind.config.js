@@ -7,7 +7,15 @@ module.exports = {
     position: ['top', 'left'],
     },
     
-    extend: {},
+    extend: {
+      fontFamily: {
+        headline: ['Oswald']
+        },
+        colors: {
+          mainColor: '#212f49'
+        },
+          
+    },
   },
   plugins: [ require('tailwindcss-debug-screens'),
 ],
