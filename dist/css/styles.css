@@ -387,8 +387,8 @@ video {
   h1 {
   margin-bottom: 1.5rem;
   font-family: Oswald;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(33 47 73 / var(--tw-text-opacity));
@@ -682,8 +682,8 @@ video {
 .mt-8 {
   margin-top: 2rem;
 }
-.ml-auto {
-  margin-left: auto;
+.mb-7 {
+  margin-bottom: 1.75rem;
 }
 .ml-6 {
   margin-left: 1.5rem;
@@ -726,17 +726,14 @@ video {
 .list-disc {
   list-style-type: disc;
 }
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.flex-col {
+  flex-direction: column;
 }
 .items-center {
   align-items: center;
 }
-.justify-around {
-  justify-content: space-around;
-}
-.gap-5 {
-  gap: 1.25rem;
+.gap-4 {
+  gap: 1rem;
 }
 .rounded {
   border-radius: 0.25rem;
@@ -794,19 +791,62 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+
 .hover\:bg-gray-400:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
+
 .hover\:shadow-none:hover {
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+
 .focus\:ring-mainColor:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(33 47 73 / var(--tw-ring-opacity));
 }
+
+@media (min-width: 640px) {
+
+  .sm\:ml-auto {
+    margin-left: auto;
+  }
+
+  .sm\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .sm\:hidden {
+    display: none;
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:items-stretch {
+    align-items: stretch;
+  }
+
+  .sm\:justify-around {
+    justify-content: space-around;
+  }
+
+  .sm\:gap-5 {
+    gap: 1.25rem;
+  }
+
+  .sm\:gap-0 {
+    gap: 0px;
+  }
+}
+
 @media (min-width: 768px) {
 
   .md\:mt-10 {
@@ -829,6 +869,7 @@ video {
     line-height: 1.5;
   }
 }
+
 @media (min-width: 1024px) {
 
   .lg\:mx-auto {
@@ -840,6 +881,7 @@ video {
     width: 66.666667%;
   }
 }
+
 @media (min-width: 1280px) {
 
   .xl\:mx-auto {
@@ -860,6 +902,7 @@ video {
     line-height: 2.25rem;
   }
 }
+
 @media (min-width: 1536px) {
 
   .\32xl\:text-2xl {
