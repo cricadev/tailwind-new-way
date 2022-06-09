@@ -1,18 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
   @font-face {
     font-family: Oswald;
     src: url(/dist/fonts/Oswald/Oswald-Bold.ttf) format("truetype");
   }
   h1 {
-    @apply mb-6 text-5xl font-headline text-mainColor font-bold;
+    @apply mb-6 text-5xl font-bold font-headline text-mainColor;
   }
   h2 {
-    @apply mb-3 text-3xl font-headline text-mainColor font-bold;
+    @apply mb-3 text-2xl font-bold md:text-3xl font-headline text-mainColor;
   }
   h3 {
-    @apply mb-2 text-2xl font-headline text-mainColor font-bold;
+    @apply mb-4 text-xl font-bold md:mb-2 md:text-2xl font-headline text-mainColor;
+  }
+  p {
+    @apply text-lg;
+  }
+  li {
+    @apply mb-4 text-lg md:text-xl;
+  }
+  .title {
+    @apply md:block !important;
   }
 }
