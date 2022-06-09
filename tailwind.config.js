@@ -2,6 +2,12 @@
 module.exports = {
   content: [ './dist/**/*.{html,js}',
   './components/**/*.{html,js}',],
+  purge: {
+    enabled: true,
+    content: ['./dist/**/*.html'],
+    },
+    
+  darkMode: 'class',
   theme: {
     debugScreens: {
     position: ['top', 'left'],
